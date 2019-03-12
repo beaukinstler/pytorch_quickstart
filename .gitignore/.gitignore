@@ -1,3 +1,13 @@
+###########
+# vscode
+###########
+.vscode/*
+
+
+###########
+# CUDU
+###########
+
 *.i
 *.ii
 *.gpu
@@ -5,6 +15,10 @@
 *.cubin
 *.fatbin
 
+
+###########
+# Python
+###########
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
