@@ -77,8 +77,14 @@ def view_examples():
     p("Print column 2, up to row 2 from x with print(x[:2, 1])")
     print(x[:2, 1])
 
+def item_examples():
+    p("If you have a one element tensor, use .item() to get the value as a Python number")
+    x = torch.randn(1)
+    print(x)
+    print(x.item())
+
 
 if __name__ == '__main__':
-    examples()
+    pass
 
     

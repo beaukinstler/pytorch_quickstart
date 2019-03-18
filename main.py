@@ -8,5 +8,6 @@ def examples():
     wip.view_examples()
 
 if __name__ == "__main__":
-    examples()
+    # examples()
+    wip.item_examples()
 
