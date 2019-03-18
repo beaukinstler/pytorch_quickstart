@@ -38,7 +38,47 @@ def basic_examples():
 def operation_examples():
     p("OPERATIONS")
     
+    p("addition")
+    x = torch.tensor([10, 4])
+    print(type(x))
+    print(x)
+    y = torch.rand(5, 3)
+    print(type(y))
+    print(y)
+    x = x.new_ones(5, 3, dtype=torch.double)
+    print(x)
+    x = torch.randn_like(x, dtype=torch.float)
+    y = torch.rand(5, 3)
+    print(x)
+    print(y)
+    print(x + y)
+
+def view_examples():
+    p("VIEWS")
+
+    p("""Views change the shape, but share underlying objects
+         Like a pointer would reference the shared memory""")
+    
+    p("create a torch.Tensor called x, 4 ")
+    x = torch.randn(4, 4)
+    print(x)
+    
+    p("share the data, but view it as one array 16 items")
+    y = x.view(16)
+    print("y = x.view(16); print(y)")
+    print(y)    
+
+    p("Print column 2 from x with print(x[:, 1])")
+    print(x[:, 1])
+
+    p("y doesn't have a column. Must use print(y[:]) ")
+    print(y[:])
+
+    p("Print column 2, up to row 2 from x with print(x[:2, 1])")
+    print(x[:2, 1])
 
 
 if __name__ == '__main__':
     examples()
+
+    
