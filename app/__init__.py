@@ -1,5 +1,6 @@
 # from __future__ import print_function
-import torch
+# import torch
+from what_is_pytorch import examples as wip
 
 
 def p(text, newlines=3):

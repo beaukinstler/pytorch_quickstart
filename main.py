@@ -1,5 +1,5 @@
-from what_is_pytorch import examples as wip
-from app import p
+
+from app import *
 
 def examples():
     p("Chapter 1 examples",10)
