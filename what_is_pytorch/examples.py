@@ -2,23 +2,23 @@ import app
 import torch
 
 def basic_examples():
-    # app.p("EXAMPLES")
-    # app.p("Construct a 5x3 matrix, uninitialized:")
-    # x = torch.empty(5, 3)
-    # print(x)
+    app.p("EXAMPLES")
+    app.p("Construct a 5x3 matrix, uninitialized:")
+    x = torch.empty(5, 3)
+    print(x)
 
-    # app.p("Construct a randomly initialized matrix: ")
-    # x = torch.empty(5, 3)
-    # print(x)
+    app.p("Construct a randomly initialized matrix: ")
+    x = torch.empty(5, 3)
+    print(x)
 
-    # app.p("Construct a matrix filled zeros and of dtype long:")
-    # x = torch.zeros(5, 3, dtype=torch.long)
-    # print(x)
+    app.p("Construct a matrix filled zeros and of dtype long:")
+    x = torch.zeros(5, 3, dtype=torch.long)
+    print(x)
 
 
-    # app.p("Construct a tensor directly from data:")
-    # x = torch.tensor([5.5, 3])
-    # print(x)
+    app.p("Construct a tensor directly from data:")
+    x = torch.tensor([5.5, 3])
+    print(x)
 
     app.p("""or create a tensor based on an existing tensor. 
          These methods will reuse properties of the input 
